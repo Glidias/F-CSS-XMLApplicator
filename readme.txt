@@ -13,9 +13,9 @@ ___________
 
 But wait, there's more! You can register a typed class, (and optionally with) a factory method, to spawn a given typed entity during property application! It even registers Vector types for the given class so you can also fill a given Vector.<Type> public variable/setter with multiple entities when applyStyle() is used!
 
-I'll document more (with example)
+I'll document more 
 on the:
-XMLApplicator.registerSerializable(class:Class, factoryMethod:Function=null, vectorFixed:Boolean=false)  method later. WHat it does is it provides a very fast way for registering your own custom object types so that they can easily be applied on any given public property of a targetted object when applyStyle() is used on it. In short, it allows for fast-spawning of new instances that are immediately assigned to typed variables/setters (whether ":Type" or ":Vector.<Type>"), in a blink of an eye onto an object. 
+XMLApplicator.registerSerializable(class:Class, factoryMethod:Function=null, vectorFixed:Boolean=false)  method. WHat it does is it provides a very fast way for registering your own custom object types so that they can easily be applied on any given public property of a targetted object when applyStyle() is used on it. In short, it allows for fast-spawning of new instances that are immediately assigned to typed variables/setters (whether ":Type" or ":Vector.<Type>"), in a blink of an eye onto an object. 
 
 _____________
 
@@ -23,3 +23,9 @@ And a handy method
 XMLApplicator.getXMLOfVec(nodeName:String, vec:*):XML to return an xml consisting of multiple child nodes, where each child node represents an IXMLSerializable instance.
 
 IXMLSerializable.getXML():XML allows one to define the XML template format for outputting it's XML settings . This allows for quick saving/re-loading of data.
+
+______________
+
+For a fairly detailed overview on how to use this, goto:
+
+http://github.com/Glidias/F-CSS-XMLApplicator/wiki/Overview-Example
