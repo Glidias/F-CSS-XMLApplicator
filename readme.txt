@@ -17,6 +17,8 @@ I'll document more (with example)
 on the:
 XMLApplicator.registerSerializable(class:Class, factoryMethod:Function=null, vectorFixed:Boolean=false)  method later. WHat it does is it provides a very fast way for registering your own custom object types so that they can easily be applied on any given public property of a targetted object when applyStyle() is used on it. In short, it allows for fast-spawning of new instances that are immediately assigned to typed variables/setters (whether ":Type" or ":Vector.<Type>"), in a blink of an eye onto an object. 
 
+_____________
+
 And a handy method 
 XMLApplicator.getXMLOfVec(nodeName:String, vec:*):XML to return an xml consisting of multiple child nodes, where each child node represents an IXMLSerializable instance.
 

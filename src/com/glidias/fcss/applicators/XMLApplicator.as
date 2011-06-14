@@ -96,6 +96,8 @@ package com.glidias.fcss.applicators
 			);
 		}
 		
+		// Other handy misc. methods
+		
 		public static function getXMLOfVec(nodeName:String, vec:*):XML {
 			var xml:XML = <{nodeName} />;
 			var len:int = vec.length;
@@ -108,6 +110,11 @@ package com.glidias.fcss.applicators
 			return xml;
 		}
 		
+		
+		public static function renameNode(newName:String, node:XML):XML {
+			node.setName(newName);
+			return node;
+		}
 	}
 	
 	
